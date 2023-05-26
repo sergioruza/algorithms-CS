@@ -1,35 +1,27 @@
-# def is_anagram(first_string, second_string):
-#     if (
-#         len(first_string) != len(second_string)
-#         or first_string == ""
-#         or second_string == ""
-#     ):
-#         return False
+def sort(str):
+    str_list = list(str)
 
-#     first_string = list(first_string.lower())
-#     second_string = list(second_string.lower())
+    for i in range(1, len(str_list)):
+        letter = str_list[i]
+        count = i - 1
 
-#     for index in range(len(first_string)):
-#         for i in range(len(first_string) - index - 1):
-#             if first_string[i] > first_string[i + 1]:
-#                 first_string[i], first_string[i + 1] = (
-#                     first_string[i + 1],
-#                     first_string[i],
-#                 )
+        while count >= 0 and str_list[count] > letter:
+            str_list[count + 1] = str_list[count]
+            count -= 1
 
-#     for index in range(len(second_string)):
-#         for i in range(len(second_string) - index - 1):
-#             if second_string[i] > second_string[i + 1]:
-#                 second_string[i], second_string[i + 1] = (
-#                     second_string[i + 1],
-#                     second_string[i],
-#                 )
+        str_list[count + 1] = letter
 
-#     first_word_sort = "".join(first_string)
-#     second_word_sort = "".join(second_string)
-#     result = (
-#         first_word_sort,
-#         second_word_sort,
-#         first_word_sort == second_word_sort,
-#     )
-#     return result
+    return "".join(str_list)
+
+
+def is_anagram(first_string, second_string):
+    first_string = first_string.replace(" ", "").lower()
+    second_string = second_string.replace(" ", "").lower()
+
+    first_sorted = sort(first_string)
+    second_sorted = sort(second_string)
+
+    return (first_sorted, second_sorted, first_sorted == second_sorted)
+
+
+# referencia de ajuda ChatGPT da OpenAI
