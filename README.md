@@ -3,7 +3,7 @@
   <figure>
     <img src="https://t.ctcdn.com.br/SguFNe3FLxuxZztKp1DNUUsnXh8=/660x0/smart/i520014.png" alt="Imagem" />
   </figure>
-    <p>(Imagem: Reprodução/Apify)</p>
+    <p>(Imagem: https://lamfo-unb.github.io/)</p>
 </div>
 
 
