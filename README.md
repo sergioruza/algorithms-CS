@@ -14,14 +14,13 @@ Para executar o projeto, utilize as ferramentas descritas na sessão *Ferramenta
 ## Ferramentas
 * Python - Uma linguagem de programação de alto nível.
 * Pip - Gerenciamento de pacotes usado para instalar e gerenciar pacotes de software escritos em Python
-* Docker - Conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. 
 ```bash
 
 # Faça o clone
-$ git clone git@github.com:sergioruza/web-scraping.git
+$ git clone git@github.com:sergioruza/algorithms-CS.git
 
 # Acesse a pasta
-$ cd web-scraping
+$ cd algorithms-CS
 
 # Crie o ambiente virtual para o projeto
 $ python3 -m venv .venv && source .venv/bin/activate
@@ -29,12 +28,12 @@ $ python3 -m venv .venv && source .venv/bin/activate
 # Instale as dependências
 $ python3 -m pip install -r dev-requirements.txt
 ```
-# web-scraping
+# algorithms-CS
 
 ## Introdução
 
 Este projeto possui o objetivo principal de resolver problemas e otimizar algoritmos desenvolvendo a capacidade de implementar soluções e,
-com os objetivos gerais de firmar conhecimentos em Algoritmo e Python.
+com os objetivos gerais de firmar conhecimentos em Algoritmos e Python.
 
 ## Análise técnica
 
@@ -53,7 +52,7 @@ Respeitando a proposta, o sistema deverá atender os seguintes requisitos:
 <details>
  <summary><strong>:memo: Objetivos de Aprendizado</strong></summary><br /> 
 
-- Aprimorar Python;
+- Python;
 
 - Lógica;
 
